@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="rescate y adopción de animales">
+    <title>Contáctanos - Amigos de Cuatro</title>
+</head>
+<body>
+    <header>
+        <h1>Amigos de Cuatro</h1>
+        <img src="imagenes/logo_ong.png" alt="Logo de Amigos de Cuatro" width="200">
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about.html">Sobre Nosotros</a></li>
+                <li><a href="casos.html">Casos y Rescates</a></li>
+                <li><a href="galería.html">Galería</a></li>
+                <li><a href="contacto.html">Contáctanos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<main>
+        <h2>Contáctanos y Únete a la Causa</h2>
+        <p>
+            Usa el siguiente formulario para enviarnos un mensaje. Los campos marcados con (*) son obligatorios.
+        </p>
+
+        <form action="gracias.html" method="POST">
+
+            <h3>Datos Personales de Contacto</h3>
+
+            <hr>
+            
+            <p>
+                <label for="nombre">Nombre Completo (*):</label>
+                <br>
+                <input type="text" id="nombre" name="nombre" required placeholder="Ej: Ana Pérez">
+            </p>
+
+            <p>
+                <label for="correo">Correo Electrónico (*):</label>
+                <br>
+                <input type="email" id="correo" name="correo" required placeholder="ejemplo@dominio.com">
+            </p>
+
+            <p>
+                <label for="telefono">Número de Teléfono (*):</label>
+                <br>
+                <input type="tel" id="telefono" name="telefono" required placeholder="Ej: +57 300 123 4567">
+            </p>
+
+            <br>
+            
+            <h3>Propósito de la Consulta</h3>
+
+            <hr>
+
+            <p>
+                <label for="asunto">Motivo de la Consulta (*):</label>
+                <br>
+                <select id="asunto" name="asunto" required>
+                    <option value="">-- Selecciona una opción --</option>
+                    <option value="voluntariado">Quiero ser Voluntario</option>
+                    <option value="adopcion">Interés en Adopción</option>
+                    <option value="donacion">Información sobre Donación</option>
+                    <option value="reporte">Reporte de Caso/Emergencia</option>
+                    <option value="general">Consulta General</option>
+                </select>
+            </p>
+            
+            <p>
+                Tipo de Interés (*):
+                <br>
+                <input type="radio" id="gato" name="animal_interes" value="gato" required>
+                <label for="gato">Gatos</label>
+                <br>
+                <input type="radio" id="perro" name="animal_interes" value="perro">
+                <label for="perro">Perros</label>
+                <br>
+                <input type="radio" id="ambos" name="animal_interes" value="ambos">
+                <label for="ambos">Ambos</label>
+            </p>
+            
+            <p>
+                <label for="monto_donar">Monto a Donar:</label>
+                <br>
+                <input type="number" id="monto_donar" name="monto_donar" min="5" placeholder="Mínimo $5">
+            </p>
+
+            <p>
+                <label for="fecha_voluntario">Disponibilidad para Inicio de Voluntariado:</label>
+                <br>
+                <input type="date" id="fecha_voluntario" name="fecha_voluntario">
+            </p>
+            
+            <br>
+            
+            <h3>Mensaje y Opciones Adicionales</h3>
+
+            <hr>
+            
+            <p>
+                <label for="mensaje">Escribe tu Mensaje Detallado (*):</label>
+                <br>
+                <textarea id="mensaje" name="mensaje" rows="6" cols="50" required placeholder="Escribe aquí tu pregunta o la historia del animal que quieres reportar."></textarea>
+            </p>
+            
+            <p>
+                ¿Deseas recibir información sobre?
+                <br>
+                <input type="checkbox" id="newsletter" name="opciones[]" value="newsletter">
+                <label for="newsletter">Nuestro boletín mensual</label>
+                <br>
+                <input type="checkbox" id="eventos" name="opciones[]" value="eventos">
+                <label for="eventos">Próximos eventos y kermeses</label>
+            </p>
+
+            <hr>
+
+            <p>
+                <input type="submit" value="Enviar Formulario">
+                <input type="reset" value="Limpiar Campos">
+            </p>
+
+        </form>
+
+        <hr>
+
+        <section>
+            <h3>Vías de Contacto Directo</h3>
+            <p>
+                Teléfono de Emergencia:<a href="tel:+573135437856">(+57)3135437856</a> (Solo para rescates urgentes)
+            </p>
+            <p>
+                Correo General:<a href="mailto:contacto@amigosdecuatropatas.ong">contacto@amigosdecuatropatas.org</a>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Valeria Usuga Penagos, 2025. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
